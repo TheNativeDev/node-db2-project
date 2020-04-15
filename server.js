@@ -13,9 +13,10 @@ server.use(express.json());
 server.use('/api/cars', carsRouter);
 
 // // GET
-// server.get('/', (req,res) => {
-//     res.send('<h3>Welcome to the cars API</h3>')
-// });
+server.get('/', (req,res) => {
+    res.send('<h3>Welcome to the cars API</h3>')
+});
 
 // EXPORTS
 module.exports = server;
+
